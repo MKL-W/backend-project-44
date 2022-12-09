@@ -2,22 +2,25 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-"description": "[![Actions Status](https://github.com/MKL-W/backend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/MKL-W/backend-project-44/actions)",
+  "description": "[![Actions Status](https://github.com/MKL-W/backend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/MKL-W/backend-project-44/actions)",
   "main": "index.js",
-"bin": {	
-	"brain-games": "bin/brain-games.js"	
-	},
-"scripts": {
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MKL-W/backend-project-44.git"
   },
-  "author": "",
+  "author": "mkl-w",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MKL-W/backend-project-44/issues"
   },
-  "homepage": "https://github.com/MKL-W/backend-project-44#readme"
+  "homepage": "https://github.com/MKL-W/backend-project-44#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
