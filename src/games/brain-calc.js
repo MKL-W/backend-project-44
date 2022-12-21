@@ -8,16 +8,15 @@ function getRandomIntInclusive(min, max) {
 }
 
 const brainCalc = () => {
-  hello();
+  //hello();
 
   for (let counter = 0; counter < 3; counter += 1) {
-    //const randomNum1 = Math.round(Math.random() * 100);
-    //const randomNum2 = Math.round(Math.random() * 100);
-    const randomNum = Math.round(Math.random() * 100);
+    const randomNum1 = Math.round(Math.random() * 100);
+    const randomNum2 = Math.round(Math.random() * 100);
     const operators = ['+', '-', '*'];
     const randomOp = operators[getRandomIntInclusive(0, 2)];
 
-    const taskForUser = () => `${randomNum} ${randomOp} ${randomNum}`;
+    const taskForUser = () => `${randomNum1} ${randomOp} ${randomNum2}`;
 
     const trueAnswer = () => {
       switch (randomOp) {
