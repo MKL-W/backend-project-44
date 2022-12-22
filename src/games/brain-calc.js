@@ -2,7 +2,7 @@ import engaine from '../index.js';
 
 const rules = 'What is the result of the expression?';
 
-const giveTaskAnswer = () => {
+const giveTaskAndTrueAnswer = () => {
   function getRandomIntInclusive(min, max) {
     // eslint-disable-next-line no-param-reassign
     min = Math.ceil(min);
@@ -16,7 +16,7 @@ const giveTaskAnswer = () => {
   const operators = ['+', '-', '*'];
   const randomOp = operators[getRandomIntInclusive(0, 2)];
   const result = [];
-  const taskForUser = () => (`${randomNum1} ${randomOp} ${randomNum2}`);
+  const task = () => (`${randomNum1} ${randomOp} ${randomNum2}`);
 
   const trueAnswer = () => {
     switch (randomOp) {
@@ -29,8 +29,8 @@ const giveTaskAnswer = () => {
     }
   };
 
-  result.push(taskForUser(), trueAnswer());
+  result.push(task(), trueAnswer());
   return result;
 };
 
-engaine(rules, giveTaskAnswer);
+engaine(rules, giveTaskAndTrueAnswer);
