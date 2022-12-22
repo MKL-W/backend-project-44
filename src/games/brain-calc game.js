@@ -1,8 +1,8 @@
-import engaine from '../index.js';
+// import engaine from '../index.js';
 
-const rules = 'What is the result of the expression?';
+export const rules = 'What is the result of the expression?';
 
-const giveTaskAndTrueAnswer = () => {
+export const giveTaskAndTrueAnswer = () => {
   function getRandomIntInclusive(min, max) {
     // eslint-disable-next-line no-param-reassign
     min = Math.ceil(min);
@@ -33,4 +33,4 @@ const giveTaskAndTrueAnswer = () => {
   return result;
 };
 
-engaine(rules, giveTaskAndTrueAnswer);
+// engaine(rules, giveTaskAndTrueAnswer);
