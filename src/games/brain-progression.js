@@ -36,7 +36,7 @@ export const giveTaskAndTrueAnswer = () => {
     return task()[randomEl - 1] + (task()[1] - task()[0]);
   };
 
-  result.push(task(), trueAnswer());
+  result.push(task(), String(trueAnswer()));
   return result;
 };
 

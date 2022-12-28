@@ -1,4 +1,4 @@
-//import engaine from '../index.js';
+// import engaine from '../index.js';
 
 export const rules = 'Find the greatest common divisor of given numbers.';
 
@@ -36,9 +36,9 @@ export const giveTaskAndTrueAnswer = () => {
     return ostatok2;
   };
 
-  final.push(task(), trueAnswer());
+  final.push(task(), String(trueAnswer()));
   return final;
 };
 
-//console.log(giveTaskAndTrueAnswer());
-//engaine(rules, giveTaskAndTrueAnswer);
+// console.log(giveTaskAndTrueAnswer());
+// engaine(rules, giveTaskAndTrueAnswer);

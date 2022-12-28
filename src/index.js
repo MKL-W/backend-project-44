@@ -8,7 +8,7 @@ export default (rules, giveTaskAndTrueAnswer) => {
   for (let counter = 0; counter < 3; counter += 1) {
     const [task, trueAnswer] = giveTaskAndTrueAnswer();
     const userAnswer = readlineSync.question(`Question: ${task}\nYour answer: `);
-    if (Number(userAnswer) === trueAnswer) {
+    if (/*Number*/(userAnswer) === trueAnswer) {
       console.log('Correct!');
     } else {
       return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${trueAnswer}.\nLet's try again`);
