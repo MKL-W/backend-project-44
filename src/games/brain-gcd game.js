@@ -5,7 +5,7 @@ export const rules = 'Find the greatest common divisor of given numbers.';
 export const giveTaskAndTrueAnswer = () => {
   let randomNum1 = Math.round(Math.random() * 100);
   let randomNum2 = Math.round(Math.random() * 100);
-  const result = [];
+  const final = [];
   const task = () => (`${randomNum1} ${randomNum2}`);
 
   const trueAnswer = () => {
@@ -36,8 +36,8 @@ export const giveTaskAndTrueAnswer = () => {
     return ostatok2;
   };
 
-  result.push(task(), trueAnswer());
-  return result;
+  final.push(task(), trueAnswer());
+  return final;
 };
 
 //console.log(giveTaskAndTrueAnswer());
