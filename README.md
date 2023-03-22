@@ -4,16 +4,16 @@
 <a href="https://codeclimate.com/github/MKL-W/backend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/5c40e13b81dd74f49eff/maintainability" /></a>
 
 brain-even:
-<a href="https://asciinema.org/a/FEl3KRjfeLLT63deySziFzSDl" target="_blank"><img src="https://asciinema.org/a/FEl3KRjfeLLT63deySziFzSDl.svg" /></a>
+<a href="https://asciinema.org/a/DJiLHwgWuYmYl2us6KwXwpeOK" target="_blank"><img src="https://asciinema.org/a/DJiLHwgWuYmYl2us6KwXwpeOK.svg" /></a>
 
 brain-calc:
-<a href="https://asciinema.org/a/NXMXfEh1RBjeIw1KuIDICA9uY" target="_blank"><img src="https://asciinema.org/a/NXMXfEh1RBjeIw1KuIDICA9uY.svg" /></a>
+<a href="https://asciinema.org/a/f84LcLjESmdW7kxUtQonI4vFB" target="_blank"><img src="https://asciinema.org/a/f84LcLjESmdW7kxUtQonI4vFB.svg" /></a>
 
 brain-gcd:
-<a href="https://asciinema.org/a/6osyn6F05KwXfDsmNKDngPbyg" target="_blank"><img src="https://asciinema.org/a/6osyn6F05KwXfDsmNKDngPbyg.svg" /></a>
+<a href="https://asciinema.org/a/pKm9FayaINIlRdaTp8ePdQCaZ" target="_blank"><img src="https://asciinema.org/a/pKm9FayaINIlRdaTp8ePdQCaZ.svg" /></a>
 
 brain-progression:
-<a href="https://asciinema.org/a/4Qtv8AsBg1VWQBM4ws284a5zz" target="_blank"><img src="https://asciinema.org/a/4Qtv8AsBg1VWQBM4ws284a5zz.svg" /></a>
+<a href="https://asciinema.org/a/R0Cn6ChtKtuk25QxMBqZlwqvL" target="_blank"><img src="https://asciinema.org/a/R0Cn6ChtKtuk25QxMBqZlwqvL.svg" /></a>
 
 brain-prime:
-<a href="https://asciinema.org/a/xwl5I5U97zeHFIKZuYv7jd9YP" target="_blank"><img src="https://asciinema.org/a/xwl5I5U97zeHFIKZuYv7jd9YP.svg" /></a>
+<a href="https://asciinema.org/a/O59EoEqTExJeOE14ZJNuEhSag" target="_blank"><img src="https://asciinema.org/a/O59EoEqTExJeOE14ZJNuEhSag.svg" /></a>

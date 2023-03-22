@@ -1,24 +1,21 @@
-// import engaine from '../index.js';
-
 export const rules = 'What is the result of the expression?';
 
 export const giveTaskAndTrueAnswer = () => {
-  function getRandomIntInclusive(min, max) {
-    // eslint-disable-next-line no-param-reassign
-    min = Math.ceil(min);
-    // eslint-disable-next-line no-param-reassign
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min; // Максимум и минимум включаются
-  }
+  const getRandomIntInclusive = (min, max) => {
+    if ((min === undefined) || (max === undefined)) {
+      return Math.round(Math.random() * 100);
+    }
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  };
 
-  const randomNum1 = Math.round(Math.random() * 100);
-  const randomNum2 = Math.round(Math.random() * 100);
+  const randomNum1 = getRandomIntInclusive();
+  const randomNum2 = getRandomIntInclusive();
   const operators = ['+', '-', '*'];
   const randomOp = operators[getRandomIntInclusive(0, 2)];
-  const result = [];
+
   const task = () => (`${randomNum1} ${randomOp} ${randomNum2}`);
 
-  const trueAnswer = () => {
+  const mathLogic = () => {
     switch (randomOp) {
       case '+':
         return randomNum1 + randomNum2;
@@ -29,8 +26,9 @@ export const giveTaskAndTrueAnswer = () => {
     }
   };
 
-  result.push(task(), trueAnswer());
+  const result = [];
+  const trueAnswer = mathLogic();
+
+  result.push(task(), String(trueAnswer));
   return result;
 };
-
-// engaine(rules, giveTaskAndTrueAnswer);

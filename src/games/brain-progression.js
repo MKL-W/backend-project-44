@@ -1,18 +1,15 @@
-//import engaine from '../index.js';
-
 export const rules = 'What number is missing in the progression?';
 
 export const giveTaskAndTrueAnswer = () => {
-  function getRandomIntInclusive(min, max) {
-    // eslint-disable-next-line no-param-reassign
-    min = Math.ceil(min);
-    // eslint-disable-next-line no-param-reassign
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min; // Максимум и минимум включаются
-  }
+  const getRandomIntInclusive = (min, max) => {
+    if ((min === undefined) || (max === undefined)) {
+      return Math.round(Math.random() * 100);
+    }
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  };
 
-  const randomNum1 = Math.round(Math.random() * 100);
-  const randomNum2 = Math.round(Math.random() * 100);
+  const randomNum1 = getRandomIntInclusive();
+  const randomNum2 = getRandomIntInclusive();
   const progressionLength = getRandomIntInclusive(5, 10);
   const randomEl = getRandomIntInclusive(0, progressionLength);
 
@@ -39,6 +36,3 @@ export const giveTaskAndTrueAnswer = () => {
   result.push(task(), String(trueAnswer()));
   return result;
 };
-
-//console.log(giveTaskAndTrueAnswer());
-//engaine(rules, giveTaskAndTrueAnswer);
