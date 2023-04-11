@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 export default (rules, giveTaskAndTrueAnswer) => {
-  console.log('Welcome to the Brain Games!');
+  console.log('Welcome to Brain Games!');
   const name = readlineSync.question('May I have you name? ');
   console.log(`Hello, ${name}!`);
   console.log(rules);
@@ -10,13 +10,12 @@ export default (rules, giveTaskAndTrueAnswer) => {
     const [task, trueAnswer] = giveTaskAndTrueAnswer();
     console.log(`Question: ${task}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if ((userAnswer) === trueAnswer) {
-      console.log('Correct!');
-    } else {
+
+    if ((userAnswer) !== trueAnswer) {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${trueAnswer}`);
-      console.log("'Let's try again");
-      return;
+      return console.log("'Let's try again");
     }
+    console.log('Correct!');
   }
   console.log(`Congradulations, ${name}! `);
 };

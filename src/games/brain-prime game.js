@@ -1,6 +1,8 @@
-export const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+import engaine from '../index.js';
 
-export const giveTaskAndTrueAnswer = () => {
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+const giveTaskAndTrueAnswer = () => {
   const task = Math.round(Math.random() * 100);
 
   const trueAnswer = () => {
@@ -21,7 +23,7 @@ export const giveTaskAndTrueAnswer = () => {
     };
     return check();
   };
-  const finalResult = [];
-  finalResult.push(task, trueAnswer());
-  return finalResult;
+  return [task, trueAnswer()];
 };
+
+export default () => engaine(rules, giveTaskAndTrueAnswer);

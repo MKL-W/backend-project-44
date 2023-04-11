@@ -1,6 +1,8 @@
-export const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+import engaine from '../index.js';
 
-export const giveTaskAndTrueAnswer = () => {
+const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+const giveTaskAndTrueAnswer = () => {
   const task = Math.round(Math.random() * 100);
 
   const isEven = () => (task % 2 === 0);
@@ -10,7 +12,7 @@ export const giveTaskAndTrueAnswer = () => {
   };
 
   const trueAnswer = check();
-  const finalResult = [];
-  finalResult.push(task, trueAnswer);
-  return finalResult;
+  return [task, trueAnswer];
 };
+
+export default () => engaine(rules, giveTaskAndTrueAnswer);

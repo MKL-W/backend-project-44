@@ -1,9 +1,11 @@
-export const rules = 'Find the greatest common divisor of given numbers.';
+import engaine from '../index.js';
 
-export const giveTaskAndTrueAnswer = () => {
+const rules = 'Find the greatest common divisor of given numbers.';
+
+const giveTaskAndTrueAnswer = () => {
   let randomNum1 = Math.round(Math.random() * 100);
   let randomNum2 = Math.round(Math.random() * 100);
-  const final = [];
+
   const task = () => (`${randomNum1} ${randomNum2}`);
 
   const trueAnswer = () => {
@@ -32,6 +34,7 @@ export const giveTaskAndTrueAnswer = () => {
     return ostatok2;
   };
 
-  final.push(task(), String(trueAnswer()));
-  return final;
+  return [task(), String(trueAnswer())];
 };
+
+export default () => engaine(rules, giveTaskAndTrueAnswer);
