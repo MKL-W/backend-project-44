@@ -3,7 +3,7 @@ import getRandomIntInclusive from '../randomNumGenerator.js';
 
 const rules = 'What is the result of the expression?';
 
-const mathLogic = (randomOp, randomNum1, randomNum2) => {
+const calculate = (randomOp, randomNum1, randomNum2) => {
   switch (randomOp) {
     case '+':
       return randomNum1 + randomNum2;
@@ -20,7 +20,7 @@ const giveTaskAndTrueAnswer = () => {
   const operators = ['+', '-', '*'];
   const randomOp = operators[getRandomIntInclusive(0, 2)];
 
-  const trueAnswer = mathLogic(randomOp, randomNum1, randomNum2);
+  const trueAnswer = calculate(randomOp, randomNum1, randomNum2);
 
   return [(`${randomNum1} ${randomOp} ${randomNum2}`), String(trueAnswer)];
 };

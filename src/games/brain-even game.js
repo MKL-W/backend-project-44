@@ -1,18 +1,14 @@
 import engaine from '../index.js';
+import getRandomIntInclusive from '../randomNumGenerator.js';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
+const isEven = (num) => (num % 2 === 0);
+
 const giveTaskAndTrueAnswer = () => {
-  const task = Math.round(Math.random() * 100);
-
-  const isEven = () => (task % 2 === 0);
-  const check = () => {
-    const result = isEven(task) ? 'yes' : 'no';
-    return result;
-  };
-
-  const trueAnswer = check();
-  return [task, trueAnswer];
+  const task = getRandomIntInclusive();
+  const trueAnswer = () => (isEven(task) ? 'yes' : 'no');
+  return [task, trueAnswer()];
 };
 
 export default () => engaine(rules, giveTaskAndTrueAnswer);

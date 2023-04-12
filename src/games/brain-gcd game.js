@@ -1,40 +1,22 @@
 import engaine from '../index.js';
+import getRandomIntInclusive from '../randomNumGenerator.js';
 
 const rules = 'Find the greatest common divisor of given numbers.';
 
+const getNod = (num1, num2) => {
+  if (num2 === 0) {
+    return num1;
+  }
+  return getNod(num2, num1 % num2);
+};
+
 const giveTaskAndTrueAnswer = () => {
-  let randomNum1 = Math.round(Math.random() * 100);
-  let randomNum2 = Math.round(Math.random() * 100);
+  const randomNum1 = getRandomIntInclusive();
+  const randomNum2 = getRandomIntInclusive();
 
-  const task = () => (`${randomNum1} ${randomNum2}`);
+  const trueAnswer = () => getNod(randomNum1, randomNum2);
 
-  const trueAnswer = () => {
-    if (randomNum1 < randomNum2) {
-      const tmp = randomNum1;
-      randomNum1 = randomNum2;
-      randomNum2 = tmp;
-    }
-    let ostatok1 = randomNum1 % randomNum2;
-    if (ostatok1 === 0) {
-      return randomNum2;
-    }
-
-    let ostatok2 = randomNum2 % ostatok1;
-    let result = ostatok1 % ostatok2;
-
-    if (ostatok1 === 1 || ostatok2 === 1) {
-      return 1;
-    }
-
-    while (result !== 0) {
-      ostatok1 = ostatok2;
-      ostatok2 = result;
-      result = ostatok1 % ostatok2;
-    }
-    return ostatok2;
-  };
-
-  return [task(), String(trueAnswer())];
+  return [(`${randomNum1} ${randomNum2}`), String(trueAnswer())];
 };
 
 export default () => engaine(rules, giveTaskAndTrueAnswer);
