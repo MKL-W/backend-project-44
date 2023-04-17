@@ -19,7 +19,7 @@ const giveTaskAndTrueAnswer = () => {
 
   const trueAnswer = firstElment + (step * indexOfHiddenElement);
 
-  return [createProgression(firstElment, step, indexOfHiddenElement), String(trueAnswer)];
+  return [String(createProgression(firstElment, step, indexOfHiddenElement)), String(trueAnswer)];
 };
 
 export default () => engaine(rules, giveTaskAndTrueAnswer);
