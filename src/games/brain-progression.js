@@ -18,8 +18,9 @@ const giveTaskAndTrueAnswer = () => {
   const indexOfHiddenElement = getRandomIntInclusive(0, 5);
 
   const trueAnswer = firstElment + (step * indexOfHiddenElement);
-
-  return [String(createProgression(firstElment, step, indexOfHiddenElement)), String(trueAnswer)];
+  
+  
+  return [createProgression(firstElment, step, indexOfHiddenElement).join(' '), String(trueAnswer)];
 };
 
 export default () => engaine(rules, giveTaskAndTrueAnswer);
