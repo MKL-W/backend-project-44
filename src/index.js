@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 export default (rules, giveTaskAndTrueAnswer) => {
   console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have you name? ');
+  const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(rules);
   const tryCounter = 3;
