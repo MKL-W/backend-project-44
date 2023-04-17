@@ -17,5 +17,5 @@ export default (rules, giveTaskAndTrueAnswer) => {
     }
     console.log('Correct!');
   }
-  console.log(`Congradulations, ${name}! `);
+  console.log(`Congratulations, ${name}! `);
 };
