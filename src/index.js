@@ -13,7 +13,7 @@ export default (rules, giveTaskAndTrueAnswer) => {
 
     if ((userAnswer) !== trueAnswer) {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${trueAnswer}`);
-      return console.log("'Let's try again");
+      return console.log(`'Let's try again, ${name}!`);
     }
     console.log('Correct!');
   }
