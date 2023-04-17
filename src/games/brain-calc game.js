@@ -1,4 +1,4 @@
-import engaine from '../index.js';
+import startEngine from '../index.js';
 import getRandomIntInclusive from '../randomNumGenerator.js';
 
 const rules = 'What is the result of the expression?';
@@ -25,4 +25,4 @@ const giveTaskAndTrueAnswer = () => {
   return [(`${randomNum1} ${randomOp} ${randomNum2}`), String(trueAnswer)];
 };
 
-export default () => engaine(rules, giveTaskAndTrueAnswer);
+export default () => startEngine(rules, giveTaskAndTrueAnswer);
